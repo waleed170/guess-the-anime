@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guess Your Anime Character</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🤔 Think of a Character</h1>
+    <div id="step-intro" class="step">
+      <p>
+        Think of a character from one of these anime in your mind:
+        <strong>Naruto, One Piece, Dragon Ball, or Attack on Titan.</strong>
+        <br><br>
+        I'll try to guess who you're thinking of. Ready?
+      </p>
+      <button id="start-btn">Start</button>
+    </div>
+
+    <div id="step-questions" class="step hidden">
+      <p id="question-text">Question will go here</p>
+      <button class="answer-btn" data-answer="yes">Yes</button>
+      <button class="answer-btn" data-answer="no">No</button>
+    </div>
+
+    <div id="step-result" class="step hidden">
+      <p>I think your character is:</p>
+      <h2 id="character-name"></h2>
+      <img id="character-image" src="" alt="Character image" />
+      <p>Did I guess right?</p>
+      <button onclick="location.reload()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
